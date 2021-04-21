@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <title>Minesweeper</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="minesweeper_title">Minesweeper</h1>
+    <div id="gamegrid">
+    </div>
+      <div class="gameover_div gameover_lose" id="gameover_lose">
+        <h2 class="gameover_header">Game Over</h2>
+        <p class="gameover_emoji">😞</p>  
+        <p class="gameover_msg">You have Lost!</p>
+      </div>
+      
+      <div class="gameover_div gameover_win" id="gameover_win">
+        <h2 class="gameover_header">Congratulations</h2>
+        <p class="gameover_emoji">🥳</p>  
+        <p class="gameover_msg">You have Won!</p>
+      </div>
+
+      <button class="restart_button" id="restart_button">Restart</button>
+  </div>
+  
+  <script src="./minesweeper.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</body>
+</html>

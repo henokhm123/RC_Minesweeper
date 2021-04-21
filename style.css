@@ -1,0 +1,131 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0e2124;
+}
+
+.minesweeper_title {
+  font-family: Parisienne;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: auto;
+}
+
+#gamegrid {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  /* display: none; */
+}
+
+.board {
+  background-color:rgb(129, 158, 153);
+  border: 1px solid rgb(43, 78, 72);
+}
+
+.gamegrid_row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0;
+}
+
+.gamegrid_cell {
+  margin: 0;
+  width: 35px;
+  height: 35px;
+  border: 1px  rgb(51, 73, 71) solid;
+}
+
+.revealed_mine {
+  /* z-index: -100; */
+  background-color: rgb(172, 106, 106);
+}
+
+.exploded_mine {
+  background-color: rgb(224, 61, 61);
+  display: block;
+  font-size: 1.3em;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.revealed_blank{
+  background-color: #0e2124;
+}
+
+.flagged_cell {
+  font-size: 1.3em;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 700;
+  /* background-color: #0e2124; */
+  background-color: green;
+  color: rgb(139, 189, 230);
+
+}
+
+.revealed_cell_with_number {
+  /* color:rgb(129, 158, 153); */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-size: 1.3em;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 700;
+  background-color: #0e2124;
+  color: rgb(139, 189, 230);
+}
+
+.gameover_div {
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+}
+
+.gameover_win {
+  display: none;
+}
+
+.gameover_lose {
+  display: none;
+}
+
+.gameover_header, 
+.gameover_msg {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color:rgb(139, 189, 230);
+}
+
+.gameover_emoji {
+  font-size: 6em;
+  margin: 0;
+  padding: 0;
+}
+
+.restart_button {
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 0.5rem 1.2em;
+  font-weight: 800;
+  font-size: 2em;
+  border: none;
+  border-radius: 5px;
+  background-color:rgb(240, 77, 12);
+  color:rgb(255, 255, 255);
+}
+
+.restart_button:hover,
+.restart_button:active {
+  background-color:rgb(255, 100, 53);
+}
